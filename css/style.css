@@ -1,0 +1,358 @@
+/*
+ * Author: Simin Salari
+ * Project Name: Lora
+ * Start Date: 1397/04/11
+ * End Date: 1397/04/22
+ * Version: 1.1.0
+ * Latest Update: 1397/05/06
+ */
+/*=== ADD FONTS ====*/
+@font-face {
+    font-family: 'B Nazanin';
+    src:
+        url('fonts/BNaznnBd.woff2') format('woff2'), 
+        url('fonts/BNaznnBd.woff') format('woff'), 
+        url('fonts/BNaznnBd.ttf') format('truetype');
+    font-weight: bold;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'B Nazanin';
+    src:
+        url('fonts/BNazanin.woff2') format('woff2'), 
+        url('fonts/BNazanin.woff') format('woff'), 
+        url('fonts/BNazanin.ttf') format('truetype');
+    font-weight: normal;
+    font-stretch: normal;
+}
+
+/*==== ALL ====*/
+header,nav,aside,section,article,footer {display: block;}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'B Nazanin';
+    direction: rtl;
+}
+section{
+    margin: 15px 20px;
+}
+a{
+    text-decoration: none;
+    color: #0000cc;
+    cursor: pointer;
+}
+a:hover{
+    color: #ff3333;
+}
+textarea{
+    direction: ltr;
+    border-radius: 3pt;
+    height: 50%;
+    width: 92%;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+}
+textarea:hover{
+    border: 1px solid #ff6600;
+}
+input{
+    direction: ltr;
+    border-radius: 2pt;
+    width: 93%;
+    height: 28px;
+    border: 1px solid #bbb;
+    padding: 0px 5px;
+}
+input:hover,select:hover{
+    border: 1px solid #ff9933;
+}
+input[type=number]{
+    width: 82%;
+}
+input[type=submit]{
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 3pt;
+    width: 100px;
+    height: 35px;
+    margin: 15px 48% 0px 0px;
+}
+input[type=text]{
+    direction: rtl;
+}
+select{
+    direction: ltr;
+    padding: 1px 5px;
+    border-radius: 2pt;
+    border: 1px solid #bbb;
+    width: 213px;
+    height: 30px;
+    margin-bottom: 2px;
+}
+option{
+    direction: ltr;
+}
+
+/*==== HEADER ====*/
+header{
+    width: 100%;
+    height: 150px;
+}
+.tittel{
+    float: right;
+    padding: 20px 15px;
+}
+.logo{
+    float: left;
+    padding:10px;
+}
+
+/*==== NAVIGATION ====*/
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: #ff6600;
+}
+nav{
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+}
+nav a{
+    width: auto;
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 11px 15px 13px 15px;
+    color: #0000cc ;
+}
+nav a:hover{
+    cursor: pointer;
+    color: #333333;
+}
+.active{
+    color: #ff6600; 
+}
+.line2{
+    width: 100%;
+    height: 5px;
+    background-color: #cccccc;
+}
+
+/*==== MAIN ====*/
+
+/*==== SETTINGS ====*/
+.settings form{
+    padding: 20px 18%;
+    height: 300px;
+}
+.column{
+    direction: ltr;
+    float: left;
+    padding: 25px 10px;
+}
+.column p{
+    margin-top: 8px
+}
+.column span{
+    margin-right: -3px;
+}
+.frequency-span{
+    color:#ff0033; 
+    display: none;
+}
+.option-selected{
+    color: #ff0033;
+}
+.line3{
+    width: 5px;
+    height: 175px;
+    float: left;
+    margin-left: 70px;
+}
+
+/*==== GET & SEND ====*/
+.get{
+    margin: 25px 0px 25px 26%;
+    float: left;
+}
+.send{
+    margin: 25px 26% 25px 0px;
+    float: right;
+}
+.GetClear{
+    margin-left: 20%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 3pt;
+    border: 0.5px solid #ff9933;
+    padding: 3px 9px 3px 4px;
+    background-color: #ffffff;
+}
+.GetClear:hover{
+    text-decoration: none;
+    color: #00c;
+}
+.recycleButton{
+    margin-right:1px;
+    margin-left: -17px;
+    margin-bottom: -8px;
+    cursor: pointer;
+}
+.GetButton{
+    margin-right: 77px;
+    margin-bottom: -7px;
+    cursor: pointer;
+	float:left;
+}
+.GetHead span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.GetBody{
+    margin-top: 5px;
+    border-radius: 4pt;
+    width: 270px;
+    height: 350px;
+}
+table{
+    direction: ltr;
+}
+thead{
+    background-color: #ff9933;
+    border-radius: 3pt;
+}
+thead tr{
+    text-align: center;
+    height: 35px;
+}
+tbody tr{
+    height: 25px;
+    text-align: left;
+}
+tbody a{
+    color:#000;
+}
+.tdNum{
+    text-align: center;
+}
+.tdData{
+    text-align: center;
+    direction: ltr;
+}
+.Clear img{
+    width:14px;
+    height:18px;
+    cursor: pointer;
+}
+.pages{
+    text-align: center;
+    width: 90%;
+}
+.send span{
+    margin-right: 45%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.SendBody{
+    width: 270px; 
+    height: 350px ; 
+    margin-top: 5px;
+}
+.send-table{
+    height: 222px;
+}
+.SendBody textarea{
+    border: 1px solid #ff9933;
+}
+
+/*==== MODALS ====*/
+.modal{
+    font:12px serif;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 15%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content{
+    position: relative;
+    width: 20%;
+    border-radius: 5pt;
+    border: 1px solid #999999 ;
+    margin-right: 38%;
+    padding: 25px 30px 50px 40px;
+    background-color: #ffffff;  
+}
+.modal-content a{
+    margin-right: 50px;
+    padding-bottom: 50px;
+    float: left;
+}
+.modal-content a:hover{
+    color: #ff9933;
+}
+
+/*==== CONTACT ====*/
+.contact{
+    height: 400px;
+    float: right;
+}
+.right{
+    width: 52%;
+}
+.email{
+    width: 46%;
+    margin-right: 15px;
+}
+.comment{
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+}
+.map{
+    width:100%;
+    height:300px ;
+    border: 0px;
+    border-radius: 3pt;
+}
+.row-form{
+    margin: 0px 15px 10px 0px;
+    float: right;
+    text-align: center;
+}
+.row-form p{
+    font-size: 16px;
+    margin-top: 8px
+}
+.row-form p span{
+    color: #ff0033;
+}
+.contact-form{
+    margin: 10px;
+    float: right;
+    width: 77%;
+    height: 90%;
+}
+.contact-form textarea{
+    direction: rtl;
+}
+.contact-form input[type=submit]{
+    margin-right: 39%;
+}
+
+/*==== FOOTER ====*/
+footer{
+    background-color: #666666;
+    height: 82px;
+    width: 100%;
+}
